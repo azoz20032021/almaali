@@ -1,0 +1,87 @@
+/* ============================================================
+   ثانوية المعالي الأهلية للبنين — Design Tokens
+   ============================================================ */
+
+:root {
+  /* ---------- Colour ---------- */
+  --ink-900: #04060D;
+  --ink-800: #070A15;
+  --ink-700: #0B1020;
+  --ink-600: #10172B;
+  --ink-500: #172038;
+  --ink-400: #1E2947;
+
+  --gold-100: #FBF3D8;
+  --gold-200: #F3E2AC;
+  --gold-300: #E7CC7C;
+  --gold-400: #D9B44A;
+  --gold-500: #C69C2E;
+  --gold-600: #9C7720;
+  --gold-700: #6B5015;
+
+  /* الأزرق الملكي المستخرج من شعار المدرسة */
+  --royal-200: #8FA2E8;
+  --royal-300: #5C74D8;
+  --royal-500: #1E36A8;
+  --royal-700: #0B1A5E;
+
+  --jade-400: #2FBFA0;
+  --jade-500: #17997F;
+
+  --cream: #F6F3EA;
+  --cream-dim: rgba(246, 243, 234, 0.66);
+  --cream-faint: rgba(246, 243, 234, 0.40);
+  --hairline: rgba(217, 180, 74, 0.16);
+  --hairline-soft: rgba(246, 243, 234, 0.09);
+
+  --grad-gold: linear-gradient(135deg, var(--gold-200) 0%, var(--gold-400) 42%, var(--gold-600) 100%);
+  --grad-gold-text: linear-gradient(105deg, #FFF8E2 0%, var(--gold-300) 38%, var(--gold-500) 70%, #FFF3CE 100%);
+  --grad-sheen: linear-gradient(115deg, rgba(255,255,255,0) 30%, rgba(255,255,255,.28) 48%, rgba(255,255,255,0) 66%);
+
+  --glass: rgba(255, 255, 255, 0.034);
+  --glass-strong: rgba(255, 255, 255, 0.062);
+
+  /* ---------- Type ---------- */
+  --f-display: "Reem Kufi", "Noto Kufi Arabic", "Tajawal", system-ui, sans-serif;
+  --f-body: "IBM Plex Sans Arabic", "Tajawal", system-ui, sans-serif;
+  --f-num: "Sora", "IBM Plex Sans Arabic", system-ui, sans-serif;
+
+  --t-hero: clamp(2.9rem, 8.4vw, 8.4rem);
+  --t-h1: clamp(2.3rem, 5.4vw, 4.9rem);
+  --t-h2: clamp(1.85rem, 3.6vw, 3.35rem);
+  --t-h3: clamp(1.25rem, 1.9vw, 1.7rem);
+  --t-lead: clamp(1.02rem, 1.32vw, 1.28rem);
+  --t-body: clamp(0.96rem, 1.06vw, 1.08rem);
+  --t-small: clamp(0.8rem, 0.92vw, 0.92rem);
+  --t-micro: 0.74rem;
+
+  /* ---------- Space & shape ---------- */
+  --pad-x: clamp(1.15rem, 5vw, 7rem);
+  --sec-y: clamp(5.5rem, 12vh, 11rem);
+  --maxw: 1440px;
+  --maxw-narrow: 940px;
+
+  --r-xs: 8px;
+  --r-sm: 14px;
+  --r-md: 22px;
+  --r-lg: 34px;
+  --r-xl: 48px;
+  --r-pill: 999px;
+
+  /* ---------- Motion ---------- */
+  --e-out: cubic-bezier(.16, 1, .3, 1);
+  --e-in-out: cubic-bezier(.76, 0, .24, 1);
+  --e-soft: cubic-bezier(.25, .8, .25, 1);
+
+  /* ---------- Shadow ---------- */
+  --sh-sm: 0 2px 10px rgba(0, 0, 0, .35);
+  --sh-md: 0 18px 44px -18px rgba(0, 0, 0, .7);
+  --sh-lg: 0 46px 110px -34px rgba(0, 0, 0, .85);
+  --sh-gold: 0 20px 60px -22px rgba(201, 156, 46, .52);
+
+  --nav-h: 78px;
+}
+
+@media (max-width: 860px) {
+  :root { --nav-h: 66px; }
+}

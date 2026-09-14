@@ -1,0 +1,21 @@
+{
+  "name": "almaali-secondary-school",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "الموقع الرسمي لثانوية المعالي الأهلية للبنين",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "sharp": "^0.35.4",
+    "vite": "^5.4.10"
+  },
+  "dependencies": {
+    "gsap": "^3.13.0",
+    "lenis": "^1.1.18",
+    "three": "^0.170.0"
+  }
+}
