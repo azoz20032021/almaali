@@ -234,7 +234,8 @@
 }
 .cine__screen video { width: 100%; height: 100%; object-fit: cover; display: block; }
 .cine__notch {
-  position: absolute; inset-block-start: 15px; inset-inline-start: 50%;
+  /* left فيزيائية لا منطقية: inset-inline-start تنقلب في RTL فتُزيح النتوء عن المنتصف */
+  position: absolute; inset-block-start: 15px; left: 50%;
   transform: translateX(-50%);
   width: 34%; height: 16px; border-radius: 99px;
   background: #0A0D18; z-index: 2;
