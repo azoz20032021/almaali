@@ -19,7 +19,7 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Reem+Kufi:wght@400;500;600;700&family=Sora:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
+<link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Sora:wght@300;400;600;700;800&display=swap" rel="stylesheet" />
 
 <link rel="stylesheet" href="./src/styles/main.css" />
 
@@ -127,6 +127,21 @@
 
 <!-- ══════════════════ Navigation ══════════════════ -->
 <header class="nav" id="nav">
+  <div class="topbar">
+    <div class="topbar__inner">
+      <div class="topbar__info">
+        <a href="tel:+9647745557734"><svg><use href="#i-phone"/></svg><span class="num" dir="ltr">0774 555 7734</span></a>
+        <span><svg><use href="#i-clock"/></svg>الأحد – الخميس · 7:30 ص — 2:00 م</span>
+        <span><svg><use href="#i-pin"/></svg>بغداد — حي الجامعة</span>
+      </div>
+      <div class="topbar__side">
+        <span class="topbar__badge">التسجيل مفتوح للعام الدراسي القادم</span>
+        <a href="https://www.facebook.com/share/14pEShtwDmF/" target="_blank" rel="noopener" aria-label="فيسبوك"><svg><use href="#i-facebook"/></svg></a>
+        <a href="https://www.instagram.com/almaali.s.s2012" target="_blank" rel="noopener" aria-label="إنستغرام"><svg><use href="#i-instagram"/></svg></a>
+        <a href="https://wa.me/9647745557734" target="_blank" rel="noopener" aria-label="واتساب"><svg><use href="#i-whatsapp"/></svg></a>
+      </div>
+    </div>
+  </div>
   <div class="nav__inner">
     <a href="#home" class="brand" data-scroll>
       <img class="brand__logo" src="./media/logo.png" alt="شعار ثانوية المعالي الأهلية للبنين" width="44" height="44" />
@@ -182,12 +197,6 @@
   </div>
 </div>
 
-<!-- Fixed social rail -->
-<div class="rail" aria-hidden="false">
-  <a href="https://www.facebook.com/share/14pEShtwDmF/" target="_blank" rel="noopener" aria-label="فيسبوك"><svg><use href="#i-facebook"/></svg></a>
-  <a href="https://www.instagram.com/almaali.s.s2012" target="_blank" rel="noopener" aria-label="إنستغرام"><svg><use href="#i-instagram"/></svg></a>
-</div>
-
 <main id="main">
 
 <!-- ══════════════════ HERO ══════════════════ -->
@@ -240,19 +249,30 @@
   <div class="hero__scroll" aria-hidden="true">تصفّح للأسفل<i></i></div>
 </section>
 
-<!-- ══════════════════ MARQUEE ══════════════════ -->
-<div class="marquee" aria-hidden="true">
-  <div class="marquee__track" id="marqueeTrack">
-    <div class="marquee__item">
-      <b>الانضباط</b> <svg><use href="#i-star"/></svg>
-      <span>التميّز الأكاديمي</span> <svg><use href="#i-star"/></svg>
-      <b>القيم الأصيلة</b> <svg><use href="#i-star"/></svg>
-      <span>الإبداع والابتكار</span> <svg><use href="#i-star"/></svg>
-      <b>بيئة آمنة</b> <svg><use href="#i-star"/></svg>
-      <span>متابعة فردية</span> <svg><use href="#i-star"/></svg>
+<!-- ══════════════════ AT A GLANCE ══════════════════ -->
+<section class="glance" aria-label="المدرسة في سطور">
+  <div class="wrap">
+    <div class="glance__grid">
+      <div class="glance__item">
+        <span class="glance__ico"><svg><use href="#i-cap"/></svg></span>
+        <div><span>المراحل الدراسية</span><b>المتوسطة والإعدادية — علمي وأدبي</b></div>
+      </div>
+      <div class="glance__item">
+        <span class="glance__ico"><svg><use href="#i-clock"/></svg></span>
+        <div><span>أوقات الدوام</span><b>الأحد – الخميس · 7:30 ص — 2:00 م</b></div>
+      </div>
+      <div class="glance__item">
+        <span class="glance__ico"><svg><use href="#i-pin"/></svg></span>
+        <div><span>الموقع</span><b>بغداد — حي الجامعة، خلف مطعم كوخ المندي</b></div>
+      </div>
+      <a class="glance__item glance__item--cta" href="#admission" data-scroll>
+        <span class="glance__ico"><svg><use href="#i-pen"/></svg></span>
+        <div><span>التسجيل</span><b>مفتوح للعام الدراسي القادم</b></div>
+        <svg class="glance__arrow"><use href="#i-arrow"/></svg>
+      </a>
     </div>
   </div>
-</div>
+</section>
 
 <!-- ══════════════════ ABOUT ══════════════════ -->
 <section class="section" id="about">
@@ -297,7 +317,7 @@
       </ul>
 
       <div class="about__sign" data-reveal="up">
-        <div class="about__sign-av">م</div>
+        <img class="about__sign-av" src="./media/logo.png" alt="" width="54" height="54" loading="lazy" />
         <div class="about__sign-meta">
           <b>من المعالي … نصنع المستقبل</b>
           <span>شعار المدرسة</span>
@@ -636,24 +656,6 @@
         </figcaption>
       </figure>
     </div>
-
-    <div class="hon__strip" data-reveal="stagger">
-      <div class="hon__stat">
-        <svg><use href="#i-spark"/></svg>
-        <b class="num" dir="ltr">45+</b>
-        <span>طالب متفوّق</span>
-      </div>
-      <div class="hon__stat">
-        <svg><use href="#i-trophy"/></svg>
-        <b class="num" dir="ltr">25+</b>
-        <span>جائزة ومشاركة</span>
-      </div>
-      <div class="hon__stat">
-        <svg><use href="#i-chart"/></svg>
-        <b class="num" dir="ltr">98%</b>
-        <span>نسبة نجاح في العام الدراسي</span>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -707,14 +709,11 @@
     </div>
 
     <div class="gal__grid" id="galGrid">
-      <figure class="gal__item" data-reveal="fade"><img src="./media/photos/room-teaching.jpg" alt="غرفة التعليم" loading="lazy"><figcaption class="gal__label">غرفة التعليم</figcaption></figure>
-      <figure class="gal__item" data-reveal="fade"><img src="./media/photos/fac-lab.jpg" alt="تجربة في المختبر" loading="lazy"><figcaption class="gal__label">تجربة في المختبر</figcaption></figure>
-      <figure class="gal__item" data-reveal="fade"><img src="./media/photos/crop-students.jpg" alt="طلبتنا المتفوقون" loading="lazy"><figcaption class="gal__label">طلبتنا المتفوقون</figcaption></figure>
+      <figure class="gal__item" data-reveal="fade"><img src="./media/photos/cine-poster.jpg" alt="حصة تفاعلية في غرفة التعليم" loading="lazy"><figcaption class="gal__label">غرفة التعليم</figcaption></figure>
+      <figure class="gal__item" data-reveal="fade"><img src="./media/photos/about.jpg" alt="تجربة كيمياء في المختبر" loading="lazy"><figcaption class="gal__label">تجربة في المختبر</figcaption></figure>
       <figure class="gal__item" data-reveal="fade"><img src="./media/photos/fac-equipment.jpg" alt="أجهزة ومجاهر حديثة" loading="lazy"><figcaption class="gal__label">أجهزة ومجاهر حديثة</figcaption></figure>
-      <figure class="gal__item" data-reveal="fade"><img src="./media/photos/room-lab.jpg" alt="غرفة المختبرات" loading="lazy"><figcaption class="gal__label">غرفة المختبرات</figcaption></figure>
-      <figure class="gal__item" data-reveal="fade"><img src="./media/photos/room-achievements.jpg" alt="غرفة الإنجازات" loading="lazy"><figcaption class="gal__label">غرفة الإنجازات</figcaption></figure>
-      <figure class="gal__item" data-reveal="fade"><img src="./media/photos/fac-teaching.jpg" alt="حصة تفاعلية" loading="lazy"><figcaption class="gal__label">حصة تفاعلية</figcaption></figure>
-      <figure class="gal__item" data-reveal="fade"><img src="./media/photos/fac-honours.jpg" alt="جدار الإنجازات" loading="lazy"><figcaption class="gal__label">جدار الإنجازات</figcaption></figure>
+      <figure class="gal__item" data-reveal="fade"><img src="./media/photos/fac-lab.jpg" alt="طلبة في غرفة المختبرات" loading="lazy"><figcaption class="gal__label">غرفة المختبرات</figcaption></figure>
+      <figure class="gal__item" data-reveal="fade"><img src="./media/photos/fac-honours.jpg" alt="جدار الإنجازات وصور الطلبة المتفوقين" loading="lazy"><figcaption class="gal__label">غرفة الإنجازات</figcaption></figure>
     </div>
   </div>
 </section>
@@ -887,6 +886,9 @@
             loading="lazy" referrerpolicy="no-referrer-when-downgrade"
             title="موقع ثانوية المعالي على الخريطة"></iframe>
         </div>
+        <a class="link-u map__link" href="https://www.google.com/maps/search/?api=1&query=%D8%AD%D9%8A%20%D8%A7%D9%84%D8%AC%D8%A7%D9%85%D8%B9%D8%A9%20%D8%A8%D8%BA%D8%AF%D8%A7%D8%AF" target="_blank" rel="noopener">
+          افتح الموقع في خرائط Google <svg><use href="#i-arrow-ne"/></svg>
+        </a>
       </div>
 
       <form class="form surface" id="contactForm" style="padding:clamp(1.4rem,3vw,2.4rem)" novalidate data-reveal="up">
@@ -1016,6 +1018,10 @@
   <a class="quick__btn quick__btn--call" href="tel:+9647745557734" aria-label="اتصال هاتفي">
     <svg><use href="#i-phone"/></svg>
     <span>اتصل بنا</span>
+  </a>
+  <a class="quick__btn quick__btn--reg" href="#admission" data-scroll aria-label="التسجيل">
+    <svg><use href="#i-pen"/></svg>
+    <span>سجّل الآن</span>
   </a>
 </div>
 

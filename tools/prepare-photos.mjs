@@ -25,7 +25,7 @@ const CROPS = [
   ['room-lab.jpg',          600, 495, 500, 313, 'fac-equipment.jpg', 1120],
   ['room-achievements.jpg', 355, 175, 800, 500, 'fac-honours.jpg',   1120],
   ['room-teaching.jpg',     100, 400, 1000, 500, 'cine-poster.jpg',  1600],
-  ['room-lab.jpg',          250, 430, 520, 598, 'about.jpg',          900],
+  ['room-lab.jpg',          250, 430, 520, 440, 'about.jpg',          900],
   ['room-achievements.jpg', 352, 268, 836, 382, 'crop-students.jpg',  836],
 ];
 

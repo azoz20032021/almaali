@@ -29,8 +29,8 @@
   --jade-500: #17997F;
 
   --cream: #F6F3EA;
-  --cream-dim: rgba(246, 243, 234, 0.66);
-  --cream-faint: rgba(246, 243, 234, 0.40);
+  --cream-dim: rgba(246, 243, 234, 0.76);
+  --cream-faint: rgba(246, 243, 234, 0.52);
   --hairline: rgba(217, 180, 74, 0.16);
   --hairline-soft: rgba(246, 243, 234, 0.09);
 
@@ -42,22 +42,22 @@
   --glass-strong: rgba(255, 255, 255, 0.062);
 
   /* ---------- Type ---------- */
-  --f-display: "Reem Kufi", "Noto Kufi Arabic", "Tajawal", system-ui, sans-serif;
+  --f-display: "Alexandria", "IBM Plex Sans Arabic", "Tajawal", system-ui, sans-serif;
   --f-body: "IBM Plex Sans Arabic", "Tajawal", system-ui, sans-serif;
   --f-num: "Sora", "IBM Plex Sans Arabic", system-ui, sans-serif;
 
-  --t-hero: clamp(2.9rem, 8.4vw, 8.4rem);
-  --t-h1: clamp(2.3rem, 5.4vw, 4.9rem);
-  --t-h2: clamp(1.85rem, 3.6vw, 3.35rem);
-  --t-h3: clamp(1.25rem, 1.9vw, 1.7rem);
-  --t-lead: clamp(1.02rem, 1.32vw, 1.28rem);
-  --t-body: clamp(0.96rem, 1.06vw, 1.08rem);
-  --t-small: clamp(0.8rem, 0.92vw, 0.92rem);
-  --t-micro: 0.74rem;
+  --t-hero: clamp(2.5rem, 6.2vw, 6.1rem);
+  --t-h1: clamp(2.1rem, 4.6vw, 4.2rem);
+  --t-h2: clamp(1.6rem, 3vw, 2.75rem);
+  --t-h3: clamp(1.12rem, 1.5vw, 1.38rem);
+  --t-lead: clamp(1.06rem, 1.3vw, 1.24rem);
+  --t-body: clamp(1rem, 1.08vw, 1.1rem);
+  --t-small: clamp(0.9rem, 0.96vw, 0.98rem);
+  --t-micro: 0.8rem;
 
   /* ---------- Space & shape ---------- */
   --pad-x: clamp(1.15rem, 5vw, 7rem);
-  --sec-y: clamp(5.5rem, 12vh, 11rem);
+  --sec-y: clamp(4.2rem, 11vh, 9rem);
   --maxw: 1440px;
   --maxw-narrow: 940px;
 
@@ -80,8 +80,12 @@
   --sh-gold: 0 20px 60px -22px rgba(201, 156, 46, .52);
 
   --nav-h: 78px;
+  --top-h: 40px;
 }
 
+@media (max-width: 1080px) {
+  :root { --top-h: 0px; }
+}
 @media (max-width: 860px) {
   :root { --nav-h: 66px; }
 }
