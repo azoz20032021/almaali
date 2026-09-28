@@ -84,8 +84,10 @@ const run = async () => {
       .toFile(p(out));
   }
 
-  await buildLogo();
-  console.log(`تم توليد ${CROPS.length + PORTRAITS.length} صورة + الشعار`);
+  // الشعار الحالي (logo.png و logo-hd.webp) نسخة مُعاد رسمها بدقة عالية —
+  // لا نستبدلها بالقصّ القديم منخفض الدقة إلا إذا طُلب ذلك صراحةً
+  if (process.argv.includes('--logo')) await buildLogo();
+  console.log(`تم توليد ${CROPS.length + PORTRAITS.length} صورة`);
 };
 
 run().catch((err) => { console.error(err); process.exit(1); });

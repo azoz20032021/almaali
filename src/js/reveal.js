@@ -133,8 +133,7 @@ export function playHeroIntro() {
     .from(q(5), { y: 26, opacity: 0, duration: soft ? 0.01 : 0.9 }, 0.62)
     .from(q(6)?.children ?? [], { y: 24, opacity: 0, duration: soft ? 0.01 : 0.85, stagger: 0.1 }, 0.74)
     .from('.nav__inner > *', { y: -18, opacity: 0, duration: soft ? 0.01 : 0.8, stagger: 0.08 }, 0.15)
-    .from('.hero__scroll', { opacity: 0, duration: 0.8 }, 0.9)
-    .from('.rail', { opacity: 0, x: -16, duration: 0.8 }, 0.9);
+    .from('.hero__scroll', { opacity: 0, duration: 0.8 }, 0.9);
 
   return tl;
 }

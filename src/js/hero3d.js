@@ -7,7 +7,7 @@
 import * as THREE from 'three';
 import { RoomEnvironment } from 'three/examples/jsm/environments/RoomEnvironment.js';
 
-const LOGO_SRC = './media/logo.png';
+const LOGO_SRC = './media/logo-hd.webp'; // 2048px — دقة عالية لوجه الوسام
 
 /* نسيج دائري ناعم للجسيمات */
 function makeDotTexture() {
@@ -156,11 +156,14 @@ export function initHero3D(canvas) {
   });
 
   const faceMat = new THREE.MeshStandardMaterial({
-    color: 0xffffff,
-    metalness: 0.08,
-    roughness: 0.42,
-    envMapIntensity: 0.85,
+    // مجموع الإضاءة على الوجه ≈ 2.7 ضعف، فنخفّض لون القاعدة كي تظهر ألوان الشعار الحقيقية
+    color: 0xcbcbcb,
+    metalness: 0,
+    roughness: 0.9,
+    envMapIntensity: 0.25,
     transparent: true,
+    // نستثني الشعار من ضغط الألوان (ACES) حتى يبقى الأزرق والذهبي بألوانهما الأصلية
+    toneMapped: false,
   });
 
   const backMat = new THREE.MeshStandardMaterial({

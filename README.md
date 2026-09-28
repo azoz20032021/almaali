@@ -96,7 +96,7 @@ ffmpeg -i campus.mp4 -vcodec libx264 -crf 28 -preset slow -an campus-web.mp4
 --gold-400:  #D9B44A;   /* الذهبي الأساسي */
 --royal-700: #0B1A5E;   /* الأزرق الملكي المستخرج من شعار المدرسة */
 --ink-900:   #04060D;   /* الخلفية الداكنة */
---f-display: "Alexandria";            /* خط العناوين */
+--f-display: "Readex Pro";            /* خط العناوين */
 --f-body:    "IBM Plex Sans Arabic";  /* خط النصوص */
 ```
 
